@@ -1,0 +1,24 @@
+.outer {
+    width: 280px;
+    height: 400px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP4fNghY7Kx6eP79gmdp6YhesUm6GZGL53Rw&s);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(58% 0, 100% 38%, 100% 100%, 0 100%, 0 0);
+    position: relative;
+    border: 2px solid #f4ffd8;
+}
+
+.outer::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -32px;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 54px 55px,
+        rgba(0, 0, 0, 0.3) 0px -12px 30px, rgba(0, 0, 0, 0.3) 0px 4px 6px,
+        rgba(0, 0, 0, 0.3) 0px 12px 13px, rgba(0, 0, 0, 0.3) 0px -3px 5px;
+}
